@@ -64,3 +64,12 @@ npx hardhat run scripts/deploy.ts --network localhost
    ```   
 npx hardhat test --network localhost
    ```
+
+## verify contracts:
+   ```   
+npx hardhat verify --network scrollSepolia your-contracts <param_constructor>
+   ```
+example
+   ```   
+npx hardhat verify --network scrollSepolia 0xD2573985B0D6C9FbAeE5481f1EEa979d4927767D 1000000000000000000000
+   ```
