@@ -6,11 +6,9 @@ This repository contains a basic implementation of an ERC20 token called `MyToke
 
 - [Installation](#installation)
 - [Contract Overview](#contract-overview)
-- [Deployment](#deployment)
-- [Testing](#testing)
 - [Configuration](#configuration)
 - [Usage](#usage)
-- [License](#license)
+
 
 ## Installation
 
@@ -39,7 +37,16 @@ The MyToken contract is an implementation of the ERC20 standard with the followi
 - `Approval`: Allows the owner to approve a spender to spend a certain amount of tokens on their behalf.
 - `TransferFrom`: Allows a spender to transfer tokens from the owner's account to another account.
 
-## To run the deployment script, execute:
+## Configuration:
+example.env rename to .env
+   ```
+   SCROLL_SEPOLIA_RPC_URL=https://sepolia-rpc.scroll.io
+   PRIVATE_KEY=your_private_key_here
+   ```
+
+## Usage:
+-`scrollSepolia`
+
    ```
 npx hardhat run scripts/deploy.ts --network scrollSepolia
    ```
@@ -47,6 +54,10 @@ npx hardhat run scripts/deploy.ts --network scrollSepolia
 npx hardhat test --network scrollSepolia
    ```
 
+-`localhost`
+   ```
+npx hardhat node
+   ```
    ```
 npx hardhat run scripts/deploy.ts --network localhost
    ```
