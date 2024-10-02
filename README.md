@@ -42,6 +42,7 @@ example.env rename to .env
    ```
    SCROLL_SEPOLIA_RPC_URL=https://sepolia-rpc.scroll.io
    PRIVATE_KEY=your_private_key_here
+   SCROLLSCAN_API_KEY=your_scrollscan_api_key_here
    ```
 
 ## Usage:
